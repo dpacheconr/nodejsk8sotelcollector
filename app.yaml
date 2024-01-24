@@ -20,7 +20,9 @@ spec:
         - containerPort: 8080
         env:
           - name: OTEL_EXPORTER_OTLP_ENDPOINT
-            value: otel-collector.default.svc.cluster.local:4318 # update if using different helm release name for the otel collector
+            value: http://otel-collector.default.svc.cluster.local:4318
+          - name: OTEL_SERVICE_NAME_NODE
+            value: nodejsappdemootelcollector
 ---
 apiVersion: v1
 kind: Service
