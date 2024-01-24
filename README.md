@@ -20,4 +20,4 @@ helm upgrade --install otel-collector open-telemetry/opentelemetry-collector --s
 kubectl apply -f app.yaml
 ```
 
-![Metrics](/screenshots/image1.png)
+![Metrics](./screenshots/image1.png)
